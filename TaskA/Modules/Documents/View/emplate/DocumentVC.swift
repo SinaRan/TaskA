@@ -17,6 +17,8 @@ class DocumentVC: UIViewController,DocumentPotocols {
     var data: DocumentModelTopLevel?
     
     var moreItems = [IndexPath]()
+    
+    var doc:Doc!
     override func viewDidLoad() {
         interactor.delegate = self
         interactor.fetchDocuments()
@@ -68,7 +70,6 @@ extension DocumentVC: UITableViewDataSource,UITableViewDelegate{
         }catch{
             cell.publicationDateLbl.text = "\(error)"
         }
-        
         cell.viewMoreBtn.indexPath = indexPath
         cell.viewMoreBtn.addTarget(self, action: #selector(seeMoreAction), for: UIControl.Event.touchUpInside)
         
@@ -105,7 +106,12 @@ extension DocumentVC: UITableViewDataSource,UITableViewDelegate{
         return 130
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("")
+        doc = data?.response.docs?[indexPath.row]
+        performSegue(withIdentifier: "detail", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DocumentDetailVC else { return }
+        destination.doc = doc
     }
 
 }

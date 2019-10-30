@@ -11,6 +11,7 @@
 		27686763236989FE005E7495 /* DocumentCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686762236989FE005E7495 /* DocumentCellTableViewCell.swift */; };
 		2768676623698C4C005E7495 /* UIVIewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768676523698C4C005E7495 /* UIVIewExtensions.swift */; };
 		2768676823699EEB005E7495 /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768676723699EEB005E7495 /* LabelExtension.swift */; };
+		2768676A2369A6EC005E7495 /* DocumentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276867692369A6EC005E7495 /* DocumentDetailVC.swift */; };
 		2790A0C12369692F001A6665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790A0C02369692F001A6665 /* AppDelegate.swift */; };
 		2790A0C32369692F001A6665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790A0C22369692F001A6665 /* SceneDelegate.swift */; };
 		2790A0C82369692F001A6665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2790A0C62369692F001A6665 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		27686762236989FE005E7495 /* DocumentCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DocumentCellTableViewCell.swift; path = llSwift/DocumentCellTableViewCell.swift; sourceTree = "<group>"; };
 		2768676523698C4C005E7495 /* UIVIewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIVIewExtensions.swift; path = emplate/UIVIewExtensions.swift; sourceTree = "<group>"; };
 		2768676723699EEB005E7495 /* LabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelExtension.swift; path = emplate/LabelExtension.swift; sourceTree = "<group>"; };
+		276867692369A6EC005E7495 /* DocumentDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DocumentDetailVC.swift; path = emplate/DocumentDetailVC.swift; sourceTree = "<group>"; };
 		2790A0BD2369692F001A6665 /* TaskA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2790A0C02369692F001A6665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2790A0C22369692F001A6665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				27686761236989A0005E7495 /* Cell */,
 				2790A0FF236971A6001A6665 /* DocumentVC.swift */,
+				276867692369A6EC005E7495 /* DocumentDetailVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				2790A100236971A6001A6665 /* DocumentVC.swift in Sources */,
 				2790A0FE23697162001A6665 /* DocumentInteractor.swift in Sources */,
 				2790A0FC2369705E001A6665 /* DocumentModel.swift in Sources */,
+				2768676A2369A6EC005E7495 /* DocumentDetailVC.swift in Sources */,
 				2790A0C32369692F001A6665 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -688,7 +692,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				INFOPLIST_FILE = TaskA/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -707,7 +713,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				INFOPLIST_FILE = TaskA/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
