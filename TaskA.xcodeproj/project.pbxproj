@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2768672223697D54005E7495 /* DocumentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768672123697D54005E7495 /* DocumentsProtocol.swift */; };
+		27686763236989FE005E7495 /* DocumentCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686762236989FE005E7495 /* DocumentCellTableViewCell.swift */; };
+		2768676623698C4C005E7495 /* UIVIewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768676523698C4C005E7495 /* UIVIewExtensions.swift */; };
+		2768676823699EEB005E7495 /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768676723699EEB005E7495 /* LabelExtension.swift */; };
 		2790A0C12369692F001A6665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790A0C02369692F001A6665 /* AppDelegate.swift */; };
 		2790A0C32369692F001A6665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790A0C22369692F001A6665 /* SceneDelegate.swift */; };
 		2790A0C82369692F001A6665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2790A0C62369692F001A6665 /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		2768672123697D54005E7495 /* DocumentsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DocumentsProtocol.swift; path = emplate/DocumentsProtocol.swift; sourceTree = "<group>"; };
+		27686762236989FE005E7495 /* DocumentCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DocumentCellTableViewCell.swift; path = llSwift/DocumentCellTableViewCell.swift; sourceTree = "<group>"; };
+		2768676523698C4C005E7495 /* UIVIewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIVIewExtensions.swift; path = emplate/UIVIewExtensions.swift; sourceTree = "<group>"; };
+		2768676723699EEB005E7495 /* LabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelExtension.swift; path = emplate/LabelExtension.swift; sourceTree = "<group>"; };
 		2790A0BD2369692F001A6665 /* TaskA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2790A0C02369692F001A6665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2790A0C22369692F001A6665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27686761236989A0005E7495 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				27686762236989FE005E7495 /* DocumentCellTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2768676423698C2F005E7495 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2768676723699EEB005E7495 /* LabelExtension.swift */,
+				2768676523698C4C005E7495 /* UIVIewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2790A0B42369692F001A6665 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +145,7 @@
 		2790A0BF2369692F001A6665 /* TaskA */ = {
 			isa = PBXGroup;
 			children = (
+				2768676423698C2F005E7495 /* Extensions */,
 				2790A0F223696CAC001A6665 /* Modules */,
 				2790A0F123696C9D001A6665 /* Storyboards */,
 				2790A0F023696C93001A6665 /* Resources */,
@@ -170,12 +194,12 @@
 		2790A0F223696CAC001A6665 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2790A0F423696E6B001A6665 /* Journal */,
+				2790A0F423696E6B001A6665 /* Documents */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		2790A0F423696E6B001A6665 /* Journal */ = {
+		2790A0F423696E6B001A6665 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
 				2790A0F823696E9D001A6665 /* Protocols */,
@@ -183,7 +207,7 @@
 				2790A0F623696E93001A6665 /* View */,
 				2790A0F523696E8E001A6665 /* Model */,
 			);
-			path = Journal;
+			path = Documents;
 			sourceTree = "<group>";
 		};
 		2790A0F523696E8E001A6665 /* Model */ = {
@@ -197,6 +221,7 @@
 		2790A0F623696E93001A6665 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				27686761236989A0005E7495 /* Cell */,
 				2790A0FF236971A6001A6665 /* DocumentVC.swift */,
 			);
 			path = View;
@@ -480,7 +505,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2768676823699EEB005E7495 /* LabelExtension.swift in Sources */,
+				27686763236989FE005E7495 /* DocumentCellTableViewCell.swift in Sources */,
 				2768672223697D54005E7495 /* DocumentsProtocol.swift in Sources */,
+				2768676623698C4C005E7495 /* UIVIewExtensions.swift in Sources */,
 				2790A0C12369692F001A6665 /* AppDelegate.swift in Sources */,
 				2790A100236971A6001A6665 /* DocumentVC.swift in Sources */,
 				2790A0FE23697162001A6665 /* DocumentInteractor.swift in Sources */,
