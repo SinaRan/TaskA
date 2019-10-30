@@ -14,6 +14,9 @@ enum dateErrors: Error {
     case noTextFound
 }
 extension UILabel{
+    
+    /// Change date style from "yyyy-MM-dd'T'HH:mm:ssZ" to "yyyy-MM-dd" and adds an optional text to it.
+    /// - Parameter text: An optional text to be concated in the begining of self.text.
     func setDate(text: String = "") throws{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

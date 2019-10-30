@@ -11,6 +11,8 @@ import UIKit
 
 private var assocKey : UInt8 = 0
 extension UIView {
+    
+    /// An optional variable for UIView in order to set indexpath of it.
     var indexPath:IndexPath{
         get {
             return objc_getAssociatedObject(self, &assocKey) as! IndexPath

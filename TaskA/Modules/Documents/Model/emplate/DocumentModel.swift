@@ -12,6 +12,8 @@ import Alamofire
 
 struct DocumentModel {
     weak var delegate:DocumentPotocols?
+    
+    /// Fetch documents from server.
     func fetchDocuments(){
         AF.request("http://api.plos.org/search?q=title:DNA").responseDecodable(of: DocumentModelTopLevel.self) { response in
             if response.error == nil {
@@ -52,8 +54,6 @@ struct Doc: Codable {
         case score
     }
 }
-
-// MARK: Convenience initializers
 
 extension DocumentModelTopLevel {
     init?(data: Data) {

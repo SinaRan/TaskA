@@ -53,6 +53,7 @@ class DocumentVC: UIViewController,DocumentPotocols {
 }
 
 extension DocumentVC: UITableViewDataSource,UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let docs = data?.response.docs else { return 0 }
         return docs.count
